@@ -1,4 +1,5 @@
 // Day 8
+/* Read an array and print 0 and 1 for even and odd elements of array respectively*/
 
 import java.io.*;
 import java.util.*;

@@ -1,4 +1,5 @@
 // Day 7
+// Read the elements and calculate it's average
 
 import java.io.*;
 import java.util.*;

@@ -3,42 +3,41 @@
 import java.io.*;
 import java.util.*;
 
-public class Solution {
+public class Switch {
 
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         int n = scan.nextInt();
         int a = scan.nextInt();
         int b = scan.nextInt();
-        int sum,diff,mul,div;
-        if(n<=100 && n>=-100){
-            switch(n) { 
-                    case 1:
-                           sum=a+b;
-                           System.out.println(sum);
-                           break;
-                    case 2: 
-                           diff=a-b;
-                           System.out.println(diff);
-                           break;
-                    case 3:
-                           mul=a*b;
-                           System.out.println(mul);
-                           break;
-                    case 4:
-                           if(b==0){
-                               System.out.println("Error");
-                               break;
-                           }
-                           else{
-                               div=a/b;
-                               System.out.println(div);
-                               break;
-                           }
-                    default: 
-                            System.out.println("Option not found");  
-                            break; 
+        int sum, diff, mul, div;
+        if (n <= 100 && n >= -100) {
+            switch (n) {
+                case 1:
+                    sum = a + b;
+                    System.out.println(sum);
+                    break;
+                case 2:
+                    diff = a - b;
+                    System.out.println(diff);
+                    break;
+                case 3:
+                    mul = a * b;
+                    System.out.println(mul);
+                    break;
+                case 4:
+                    if (b == 0) {
+                        System.out.println("Error");
+                        break;
+                    } else {
+                        div = a / b;
+                        System.out.println(div);
+                        break;
+                    }
+                default:
+                    System.out.println("Option not found");
+                    break;
             }
         }
     }
-}  
+}

@@ -3,7 +3,7 @@ In this challenge, you must read  integers from stdin and then print them to std
 
 import java.util.*;
 
-public class Solution {
+public class Java_Stdin_and_Stdout_I{
 
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);

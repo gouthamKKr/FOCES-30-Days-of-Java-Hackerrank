@@ -5,24 +5,21 @@ Task 2: if number is not positive then print number is negative */
 import java.io.*;
 import java.util.*;
 
-public class Solution {
+public class If_else2 {
 
     public static void main(String[] args) {
         int n;
         Scanner scan = new Scanner(System.in);
         n = scan.nextInt();
         scan.close();
-        if(n<=100 && n>=-100){
-            if(n >= 0){
-                if(n%5==0){
-               System.out.println("divisible by 5"); 
+        if (n <= 100 && n >= -100) {
+            if (n >= 0) {
+                if (n % 5 == 0) {
+                    System.out.println("divisible by 5");
                 }
-            }
-            else if(n< 0)
-                {
+            } else if (n < 0) {
                 System.out.println("negative");
-                }
+            }
         }
     }
 }
- 

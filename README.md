@@ -1,3 +1,2 @@
-<h1>Solutions to Foces 30 Days of Coding</h1>
+<h1> Solutions to FOCES-30 Days of Coding using Java </h1>
 
-All solutions in this repository is fully tested successfully.

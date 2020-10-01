@@ -1,20 +1,27 @@
-
-//Day 5: Leap Year
-
 import java.io.*;
 import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
 
-public class Leap_Year {
+public class Solution {
 
     public static void main(String[] args) {
-        int n;
-        Scanner input = new Scanner(System.in);
-        n = input.nextInt();
-        if (n >= 1900 && n <= 100000) {
-            if (((n % 4 == 0) && (n % 100 != 0)) || (n % 400 == 0))
-                System.out.println("True");
-            else
-                System.out.println("False");
+        Scanner scan=new Scanner(System.in);
+        int year=scan.nextInt();
+        if (year % 400 == 0) {
+            System.out.println("True");
+        }
+        else if (year % 100 == 0) {
+            System.out.println("False");
+        }
+
+        else if (year % 4 == 0) {
+            System.out.println("True");
+        }
+
+        else {
+            System.out.println("False");
         }
     }
 }

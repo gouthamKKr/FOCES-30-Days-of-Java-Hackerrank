@@ -1,42 +1,52 @@
-// Day 10
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
 
-import java.util.Scanner;
-
-public class BinarySearch {
+public class Solution {
 
     public static void main(String[] args) {
         Scanner scan=new Scanner(System.in);
         int n=scan.nextInt();
-        int[] arr = new int[n];
-        int flag=-1;
+        int a[]=new int[100];
+        int index=-1;
         
         for(int i=0;i<n;i++){
-            arr[i] = scan.nextInt();
-            }
+            a[i]=scan.nextInt();
+        }
         
-        int a=scan.nextInt();
+        int x=scan.nextInt();
         
         for(int i=0;i<n;i++){
-            for(int j = i + 1;j< n;j++){
-                if(arr[i]>arr[j]){
-                    int temp=arr[i];
-                    arr[i]=arr[j];
-                    arr[j]=temp;
+            for(int j=0;j<n-i-1;j++){
+                if(a[j]>a[j+1]){
+                    int temp=a[j];
+                    a[j]=a[j+1];
+                    a[j+1]=temp;
                 }
             }
         }
         
-        for(int i=0;i<n;i++){
-            if(arr[i]== a){
-                flag=1;
-                System.out.println(i);
-            }}
-            
-        if(flag ==-1){
-                System.out.println("-1");
-            
-            
+        int beg,last,mid;
+        beg=0;
+        last=n-1;
+        while(beg<=last){
+            mid=(beg+last)/2;
+            if(x==a[mid]){
+                index=mid;
+                break;
             }
+            else if(x>a[mid]){
+                beg=mid+1;
+            }
+            else{
+                last=mid-1;
+            }
+        }
+  
+
+       System.out.println(index);
+
     }
 }
-        

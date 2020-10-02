@@ -10,18 +10,18 @@ public class Solution {
         Scanner scan=new Scanner(System.in);
         int year=scan.nextInt();
         if (year % 400 == 0) {
-            System.out.println("True");
+            System.out.println("True, it is a leap year");
         }
         else if (year % 100 == 0) {
-            System.out.println("False");
+            System.out.println("False, it is not a leap year");
         }
 
         else if (year % 4 == 0) {
-            System.out.println("True");
+            System.out.println("True, it is a leap year");
         }
 
         else {
-            System.out.println("False");
+            System.out.println("False, it is not a leap year");
         }
     }
 }

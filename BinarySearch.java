@@ -26,8 +26,7 @@ public class Solution {
                     a[j+1]=temp;
                 }
             }
-        }
-        
+        }      
         int beg,last,mid;
         beg=0;
         last=n-1;
@@ -44,9 +43,6 @@ public class Solution {
                 last=mid-1;
             }
         }
-  
-
-       System.out.println(index);
-
+        System.out.println(index);
     }
 }

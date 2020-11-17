@@ -11,16 +11,16 @@ public class roots_quadratic {
         int a = input.nextInt();
         int b = input.nextInt();
         int c = input.nextInt();
-        int root = (b * b) - 4 * (a * c);
+        int root = b*b-4*a*c;
         double roots = sqrt(root);
-        if (root > 0) {
+        if (root>0) {
             System.out.println("Real and Distinct");
-            System.out.println(((-b - (int) roots) / (2 * a)) + " " + ((-b + (int) roots) / (2 * a)));
-        } else if (root < 0) {
+            System.out.println(((-b - (int) roots) / (2*a)) + " " + ((-b + (int) roots) / (2*a)));
+        } else if (root<0) {
             System.out.println("Imaginary");
         } else {
             System.out.println("Real and Equal");
-            System.out.println(((-b + (int) roots) / (2 * a)) + " " + ((-b - (int) roots) / (2 * a)));
+            System.out.println(((-b + (int) roots) / (2*a)) + " " + ((-b - (int) roots) / (2*a)));
         }
     }
 

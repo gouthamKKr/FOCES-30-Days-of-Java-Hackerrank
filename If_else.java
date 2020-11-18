@@ -11,14 +11,14 @@ import java.util.regex.*;
 public class If_else {
 
         public static void main(String[] args) {
-                Scanner scanner = new Scanner(System.in);
-                int N = scanner.nextInt();
+                Scanner scan = new Scanner(System.in);
+                int n = scan.nextInt();
                 scanner.skip("(\r\n|[\n\r\u2028\u2029\u0085])?");
-                if (N % 2 == 1) {
+                if (n % 2 == 1) {
                         System.out.println("Weird");
-                } else if (N >= 2 && N <= 5) {
+                } else if (n >= 2 && n <= 5) {
                         System.out.println("Not Weird");
-                } else if (N >= 6 && N <= 20) {
+                } else if (n >= 6 && n <= 20) {
                         System.out.println("Weird");
                 } else {
                         System.out.println("Not Weird");

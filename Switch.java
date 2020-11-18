@@ -7,12 +7,12 @@ public class Switch {
 
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
-        int n = scan.nextInt();
+        int num = scan.nextInt();
         int a = scan.nextInt();
         int b = scan.nextInt();
         int sum, diff, mul, div;
-        if (n <= 100 && n >= -100) {
-            switch (n) {
+        if (num <= 100 && num >= -100) {
+            switch (num) {
                 case 1:
                     sum = a + b;
                     System.out.println(sum);
